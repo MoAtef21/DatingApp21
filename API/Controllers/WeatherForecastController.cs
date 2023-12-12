@@ -1,10 +1,9 @@
 using Microsoft.AspNetCore.Mvc;
-/*
-namespace API.Controllers
+
+namespace API.Controllers 
 {
-    [ApiController]
-    [Route("[controller]")]
-    public class WeatherForecastController : ControllerBase
+
+    public class WeatherForecastController : BaseApiController
     {
         private static readonly string[] Summaries = new[]
         {
@@ -31,4 +30,3 @@ namespace API.Controllers
         }
     }
 }
-*/
