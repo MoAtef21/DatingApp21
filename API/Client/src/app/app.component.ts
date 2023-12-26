@@ -19,17 +19,17 @@ export class AppComponent {
   }
 
   ngOnInit(): void {
-    this.getUsers();
+    //this.getUsers();
     this.setCurrentUser();
   }
   
-  getUsers(){
+  /*getUsers(){
     this.http.get('https://localhost:5001/api/user').subscribe({
       next:response => this.users = response,
       error:error => console.log(error),
       complete:() => console.log('Request has Completed Good Mechoo')
     });
-  }
+  }*/
 
 
   setCurrentUser(){
