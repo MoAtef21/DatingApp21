@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
 import { ToastNoAnimationModule, ToastrModule } from 'ngx-toastr';
 import { TabsModule } from 'ngx-bootstrap/tabs';
+import { NgxSpinner, NgxSpinnerModule } from 'ngx-spinner';
 
 
 
@@ -20,13 +21,17 @@ import { TabsModule } from 'ngx-bootstrap/tabs';
       timeOut:2000,
       positionClass:'toast-bottom-right',
       preventDuplicates: true,
-    }) // Optionally, include this if you're using Toastr without animations
+    }), // Optionally, include this if you're using Toastr without animations
+      NgxSpinnerModule.forRoot({
+        type:'pacman' 
+      })
   ],
   exports : [
     BsDropdownModule,
     ToastrModule,
     ToastNoAnimationModule,
-    TabsModule
+    TabsModule,
+    NgxSpinnerModule
   ]
 })
 export class SharedModule { }
